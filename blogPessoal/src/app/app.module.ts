@@ -14,6 +14,11 @@ import { PerfilLateralComponent } from './perfil-lateral/perfil-lateral.componen
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 
+import { NgxMaskModule } from 'ngx-mask';
+
+ 
+
+
 
 @NgModule({
   declarations: [
@@ -31,7 +36,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
