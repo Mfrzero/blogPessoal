@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms'
+import { OrderModule } from 'ngx-order-pipe'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 
 import { NgxMaskModule } from 'ngx-mask';
+import { PostTemaComponent } from './post-tema/post-tema.component';
 
  
 
@@ -29,7 +31,8 @@ import { NgxMaskModule } from 'ngx-mask';
     FeedComponent,
     PerfilLateralComponent,
     LoginComponent,
-    CadastroComponent
+    CadastroComponent,
+    PostTemaComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { NgxMaskModule } from 'ngx-mask';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
+    OrderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
