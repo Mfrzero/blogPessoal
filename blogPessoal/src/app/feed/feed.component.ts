@@ -4,6 +4,7 @@ import { Tema } from './../model/Tema';
 import { Postagem } from './../model/Postagem';
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-feed',
   templateUrl: './feed.component.html',
@@ -26,11 +27,15 @@ export class FeedComponent implements OnInit {
     private temaService: TemaService
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(
+  ): void {
     window.scroll(0, 0)
     this.findAllPostagens()
     this.findAllTemas()
+   
   }
+
+
 
   findAllPostagens() {
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) => {
